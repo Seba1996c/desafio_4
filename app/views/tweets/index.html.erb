@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tweets</h1>
+
+<div id="tweets">
+  <% @tweets.each do |tweet| %>
+    <%= render tweet %>
+    <p>
+      <%= link_to "Show this tweet", tweet %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tweet", new_tweet_path %>
+<%= will_paginate @tweets %>
+
+<%= form_with(url: tweets_path, method: "get", local: true) do %>
+  <%= text_field_tag(:query, params[:query]) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
