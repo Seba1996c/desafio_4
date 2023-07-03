@@ -1,24 +1,51 @@
-# README
+# Twitter Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este proyecto es un clon de Twitter creado con Rails.
 
-Things you may want to cover:
+## Características
 
-* Ruby version
+- Crear tweets
+- Editar tweets
+- Borrar tweets
+- Buscar tweets
 
-* System dependencies
+## Requisitos
 
-* Configuration
+- Ruby 3.1.2
+- Rails 7.0.6
 
-* Database creation
+## Configuración de desarrollo
 
-* Database initialization
+Clona el repositorio:
 
-* How to run the test suite
+git clone https://github.com/Seba1996c/twitter_clone.git
 
-* Services (job queues, cache servers, search engines, etc.)
+Instala las dependencias del proyecto:
 
-* Deployment instructions
+bundle install
 
-* ...
+Crea la base de datos y realiza las migraciones:
+
+rails db:create db:migrate
+
+Finalmente, ejecuta el servidor de desarrollo:
+
+rails server
+
+Ahora puedes visitar localhost:3000 en tu navegador para ver la aplicación.
+
+## Tests
+
+Para ejecutar los tests:
+
+rails test
+
+## Contribución
+
+Las Pull Requests son bienvenidas. Para cambios grandes, por favor, abre un issue primero para discutir qué te gustaría cambiar.
+
+Por favor, asegúrate de actualizar los tests según corresponda.
+
+## Licencia
+
+MIT
